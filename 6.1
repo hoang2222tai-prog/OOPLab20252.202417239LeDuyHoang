@@ -1,0 +1,17 @@
+import javax.swing.JOptionPane;
+
+public class chon {
+    public static void main(String[] args) {
+        int c_n = JOptionPane.showConfirmDialog(null, "chon di");
+
+        String kq;
+        if (c_n == JOptionPane.YES_OPTION) {
+            kq = "chon co";
+        } else {
+            kq = "chon khong";
+        }
+
+        JOptionPane.showMessageDialog(null, kq);
+        System.exit(0);
+    }
+}
