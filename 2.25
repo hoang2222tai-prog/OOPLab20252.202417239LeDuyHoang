@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+
+public class tinh {
+    public static void main(String[] args) {
+        String sn1 = JOptionPane.showInputDialog("nhap so 1:");
+        String sn2 = JOptionPane.showInputDialog("nhap so 2:");
+
+        double n1 = Double.parseDouble(sn1);
+        double n2 = Double.parseDouble(sn2);
+
+        double tg = n1 + n2;
+        double hu = n1 - n2;
+        double th = n1 * n2;
+
+        String kq = "tong: " + tg + "\nhieu: " + hu + "\ntich: " + th + "\n";
+
+        if (n2 != 0) {
+            double tg_ = n1 / n2;
+            kq += "thuong: " + tg_;
+        } else {
+            kq += "khong the chia cho 0";
+        }
+
+        JOptionPane.showMessageDialog(null, kq);
+        System.exit(0);
+    }
+}
