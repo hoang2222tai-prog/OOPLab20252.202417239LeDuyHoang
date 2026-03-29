@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class input {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        // nhap ten
+        System.out.println("ten gi:");
+        String t = sc.nextLine();
+
+        // nhap tuoi
+        System.out.println("bao nhieu tuoi:");
+        int t_i = sc.nextInt();
+
+        // nhap chieu cao
+        System.out.println("cao bao nhieu:");
+        double c_c = sc.nextDouble();
+
+        // hien thong tin
+        System.out.println("ong " + t + " " + t_i + " tuoi " + c_c + "m");
+        
+        sc.close();
+    }
+}
