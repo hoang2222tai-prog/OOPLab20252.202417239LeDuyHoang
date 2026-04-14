@@ -35,3 +35,19 @@ public class Cart{
         return tong;
     }
 }
+public void add(DigitalVideoDisc d1,DigitalVideoDisc d2){
+    add(d1);
+    add(d2);
+}
+
+public void add(DigitalVideoDisc[] ds){
+    for(int i=0;i<ds.length;i++){
+        add(ds[i]);
+    }
+}
+
+public void add(DigitalVideoDisc... ds){
+    for(int i=0;i<ds.length;i++){
+        add(ds[i]);
+    }
+}
